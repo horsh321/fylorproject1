@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  text-decoration: none !important;
+}
+
+:root {
+  --Softorange: hsl(35, 77%, 62%);
+  --ModerateCyan: hsl(170, 45%, 43%);
+  --Softred: hsl(5, 85%, 63%);
+  --BrightBlue: hsl(224, 93%, 58%);
+  --Grayishblue: hsl(233, 8%, 79%);
+  --darkgrayishblue: hsl(236, 13%, 42%);
+  --Verydarkblue: hsl(240, 100%, 5%);
+  --DarkViolet: hsl(256, 26%, 20%);
+  --GrayishBlue: hsl(216, 30%, 68%);
+  --VeryDarkViolet: hsl(270, 9%, 17%);
+  --DarkGrayishViolet: hsl(273, 4%, 51%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --DesaturatedBlue: hsl(238, 22%, 44%);
+  --LightGray: hsl(0, 0%, 75%);
+  --LightGrayishBlue: hsl(240, 75%, 98%);
+  --VeryDarkBlue: hsl(243, 87%, 12%);
+}
+
+h1,
+h2,
+h3,
+a,
+button {
+  font-family: "Raleway", sans-sarif;
+}
+
+p {
+  font-family: "Open sans", sans-sarif;
+  font-size: 1rem;
+}
+a, 
+p, 
+h1 {
+  color: var(--Verydarkblue);
+  }
+  a:hover {
+    color: var(--BrightBlue) !important;
+    transition: 0.3s ease-in-out ;
+  }
+  .bg-image {
+    background-image: url(./images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .green-line {
+    width: 165px;
+    border: 1.2px solid var(--moderateCyan);
+  }
+  .link {
+    color: var(--moderateCyan);
+  }
+  .bg-blue {
+    background-color: var(--DesaturatedBlue);
+  }
+  footer{
+    background-color: var(--VeryDarkBlue);
+  }
+  .bi {
+    font-size: 25px;
+    color: var(--LightGrayishBlue);
+  }
+
+@media (min-width: 768px) {
+    .img-adjust {
+        width: 300px;
+        height: 500px;
+    }
+    .card{
+        width: 80%;
+    }
+    .btn-adjust{
+        width: 250px !important;
+    }
+    .bg-image {
+        background-image: url(./images/bg-curve-desktop.svg);
+    }
+}
+ @media (min-width:992px) {
+    .img-adjust{
+        width: 450px;
+        height: 500px
+    }
+    .card{
+        width: 60%;
+    }
+ }  
